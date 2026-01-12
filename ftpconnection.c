@@ -62,7 +62,6 @@ char **str_split(char *a_str, const char a_delim)
 int main(int argc, char *argv[])
 {
 
-    // RECEBE E SEPARA OS PARAMETROS DO URL
     if (argc != 2)
     {
         fprintf(stderr, "Usage: %s http://username:password@ftp.example.com/path/to/file.txt\n", argv[0]);
@@ -158,7 +157,7 @@ int main(int argc, char *argv[])
     ret++;
     printf("%s\n", ret);
 
-    strcpy(ficheiro, ret); // <-- ADD THIS LINE
+    strcpy(ficheiro, ret); 
 
     char **tokens;
     char caminho[256];
@@ -281,3 +280,4 @@ int main(int argc, char *argv[])
 
     return 0;
 }
+
